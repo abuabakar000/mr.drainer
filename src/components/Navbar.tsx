@@ -40,9 +40,9 @@ export default function Navbar() {
           <Image 
             src="/logo.png" 
             alt="Mr. Drainer Logo" 
-            width={240} 
-            height={80} 
-            className="h-14 md:h-16 w-auto object-contain transition-all hover:scale-105 duration-300"
+            width={300} 
+            height={100} 
+            className="h-16 md:h-20 w-auto object-contain transition-all hover:scale-105 duration-300"
           />
         </Link>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
         >
           {/* Header */}
           <div className="p-6 flex items-center justify-between border-b border-gray-100">
-            <Image src="/logo.png" alt="Mr. Drainer Logo" width={150} height={50} className="h-10 w-auto object-contain" />
+            <Image src="/logo.png" alt="Mr. Drainer Logo" width={200} height={70} className="h-12 w-auto object-contain" />
             <button 
               onClick={() => setIsMobileMenuOpen(false)}
               className="p-2 text-gray-400 hover:text-secondary transition-colors cursor-pointer"

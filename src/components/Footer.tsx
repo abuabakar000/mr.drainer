@@ -11,9 +11,9 @@ export default function Footer() {
             <Image 
               src="/logo.png" 
               alt="Mr. Drainer Logo" 
-              width={180} 
-              height={60} 
-              className="h-10 w-auto object-contain cursor-pointer"
+              width={220} 
+              height={70} 
+              className="h-12 w-auto object-contain cursor-pointer"
             />
           </Link>
           <p className="text-sm text-gray-400 leading-relaxed font-medium">
