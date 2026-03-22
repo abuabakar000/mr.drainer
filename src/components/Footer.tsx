@@ -24,7 +24,7 @@ export default function Footer() {
         {/* Links Column 1 */}
         <div>
           <h3 className="text-lg font-bold mb-4 border-b border-primary pb-2 text-primary uppercase tracking-wider">Services</h3>
-          <ul className="space-y-1 text-xs text-gray-400 font-bold uppercase transition-all tracking-wide">
+          <ul className="grid grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-1 text-xs text-gray-400 font-bold uppercase transition-all tracking-wide">
             <li className="italic">Drain Cleaning</li>
             <li className="italic">Sewer Line Repair</li>
             <li className="italic">Water Heaters</li>

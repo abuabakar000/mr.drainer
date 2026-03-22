@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mr.Drainer | The Plumbing solutions",
+  title: "Mr. Drainer | The Plumbing Solutions",
   description: "Expert plumbing services including drain cleaning, sewer repair, and 24/7 emergency support.",
   icons: {
     icon: "/favicon.png",
