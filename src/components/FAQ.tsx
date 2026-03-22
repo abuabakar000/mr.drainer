@@ -76,7 +76,7 @@ export default function FAQ() {
                   e.preventDefault();
                   setOpenIndex(openIndex === index ? null : index);
                 }}
-                className="w-full p-6 md:p-8 flex items-center justify-between text-left group outline-none"
+                className="w-full p-6 md:p-8 flex items-center justify-between text-left group outline-none cursor-pointer"
               >
                 <span className={`text-xl md:text-2xl font-black italic uppercase tracking-tight transition-colors ${
                   openIndex === index ? 'text-primary' : 'text-gray-700 group-hover:text-primary'

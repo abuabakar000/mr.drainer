@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mr. Drainer Plumbing | Professional Residential & Commercial Services",
+  title: "Mr.Drainer | The Plumbing solutions",
   description: "Expert plumbing services including drain cleaning, sewer repair, and 24/7 emergency support.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

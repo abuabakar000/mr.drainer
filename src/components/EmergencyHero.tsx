@@ -24,7 +24,7 @@ export default function EmergencyHero() {
             <ShieldAlert size={20} /> 24/7 Emergency Response
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-[1.1] tracking-tighter uppercase italic">
+          <h1 className="text-4xl md:text-7xl font-black text-white leading-[1.1] tracking-tighter uppercase italic">
             Urgent Plumbing <br />
             <span className="text-secondary">Emergency?</span> <br />
             We&apos;re On Our Way.
@@ -35,11 +35,11 @@ export default function EmergencyHero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
-            <a href="tel:8447408904" className="bg-secondary hover:bg-red-700 text-white font-black py-6 px-10 rounded-2xl transition-all shadow-2xl active:scale-95 uppercase italic tracking-widest flex items-center justify-center gap-4 text-2xl group flex-1">
+            <a href="tel:8447408904" className="bg-secondary hover:bg-red-700 text-white font-black py-6 px-10 rounded-2xl transition-all shadow-2xl active:scale-95 uppercase italic tracking-widest flex items-center justify-center gap-4 text-2xl group flex-1 cursor-pointer">
               <Phone size={28} className="group-hover:rotate-12 transition-transform" /> (844) 740-8904
             </a>
             
-            <Link href="/schedule" className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all group flex-1 flex items-center justify-center">
+            <Link href="/schedule" className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all group flex-1 flex items-center justify-center cursor-pointer">
               <div className="flex items-center gap-4">
                 <div className="bg-white/20 p-3 rounded-xl text-white group-hover:scale-110 transition-transform">
                   <Calendar size={32} />

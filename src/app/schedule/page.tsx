@@ -16,6 +16,7 @@ export default function SchedulePage() {
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 1500);
   };
 
@@ -45,7 +46,8 @@ export default function SchedulePage() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 md:py-20 lg:py-24">
       <div className="container mx-auto max-w-7xl">
-        <div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row shadow-primary/10 border border-gray-100">
+        <div className="bg-white rounded-[4rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] overflow-hidden flex flex-col lg:flex-row border-2 border-gray-50 ring-1 ring-black/5 relative">
+          <div className="absolute top-0 left-0 w-4 h-full bg-secondary shadow-[6px_0_20px_rgba(227,27,35,0.2)] z-30"></div>
           
           {/* Left: Form Area */}
           <div className="flex-1 p-8 md:p-12 lg:p-20">
@@ -58,84 +60,84 @@ export default function SchedulePage() {
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <label className="text-sm font-black text-primary uppercase tracking-widest">First Name*</label>
+            <form onSubmit={handleSubmit} className="space-y-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-4 group-hover:text-primary transition-colors">First Name*</label>
                   <input 
                     required 
                     type="text" 
-                    placeholder="ex. Jane" 
-                    className="w-full h-16 bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 font-bold text-primary focus:border-secondary focus:ring-0 transition-all outline-none"
+                    placeholder="ENTER FIRST NAME*" 
+                    className="w-full h-16 bg-white border-2 border-gray-100 rounded-[1.5rem] px-8 font-black text-primary focus:border-secondary shadow-sm hover:shadow-md transition-all outline-none placeholder:text-gray-400 placeholder:text-[10px] placeholder:tracking-widest"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-black text-primary uppercase tracking-widest">Last Name*</label>
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-4 group-hover:text-primary transition-colors">Last Name*</label>
                   <input 
                     required 
                     type="text" 
-                    placeholder="ex. Smith" 
-                    className="w-full h-16 bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 font-bold text-primary focus:border-secondary focus:ring-0 transition-all outline-none"
+                    placeholder="ENTER LAST NAME*" 
+                    className="w-full h-16 bg-white border-2 border-gray-100 rounded-[1.5rem] px-8 font-black text-primary focus:border-secondary shadow-sm hover:shadow-md transition-all outline-none placeholder:text-gray-400 placeholder:text-[10px] placeholder:tracking-widest"
                   />
                 </div>
               </div>
 
-              <div className="space-y-2 max-w-sm">
-                <label className="text-sm font-black text-primary uppercase tracking-widest">Postal Code*</label>
+              <div className="space-y-3 max-w-sm">
+                <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-4 group-hover:text-primary transition-colors">Postal Code*</label>
                 <input 
                   required 
                   type="text" 
-                  placeholder="91730" 
-                  className="w-full h-16 bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 font-bold text-primary focus:border-secondary focus:ring-0 transition-all outline-none"
+                  placeholder="ENTER POSTAL CODE*" 
+                  className="w-full h-16 bg-white border-2 border-gray-100 rounded-[1.5rem] px-8 font-black text-primary focus:border-secondary shadow-sm hover:shadow-md transition-all outline-none placeholder:text-gray-400 placeholder:text-[10px] placeholder:tracking-widest"
                 />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <label className="text-sm font-black text-primary uppercase tracking-widest">Service Address*</label>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-4 group-hover:text-primary transition-colors">Service Address*</label>
                   <input 
                     required 
                     type="text" 
-                    placeholder="ex. 1234 Example St." 
-                    className="w-full h-16 bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 font-bold text-primary focus:border-secondary focus:ring-0 transition-all outline-none"
+                    placeholder="ENTER SERVICE ADDRESS*" 
+                    className="w-full h-16 bg-white border-2 border-gray-100 rounded-[1.5rem] px-8 font-black text-primary focus:border-secondary shadow-sm hover:shadow-md transition-all outline-none placeholder:text-gray-400 placeholder:text-[10px] placeholder:tracking-widest"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-black text-primary uppercase tracking-widest">Apartment, Suite, Unit, etc...</label>
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-4 group-hover:text-primary transition-colors">Apartment, Suite, etc</label>
                   <input 
                     type="text" 
-                    placeholder="Apt 123, Suite A, Unit 5A" 
-                    className="w-full h-16 bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 font-bold text-primary focus:border-secondary focus:ring-0 transition-all outline-none"
+                    placeholder="ENTER APT, SUITE, ETC" 
+                    className="w-full h-16 bg-white border-2 border-gray-100 rounded-[1.5rem] px-8 font-black text-primary focus:border-secondary shadow-sm hover:shadow-md transition-all outline-none placeholder:text-gray-400 placeholder:text-[10px] placeholder:tracking-widest"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <label className="text-sm font-black text-primary uppercase tracking-widest">Email*</label>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-4 group-hover:text-primary transition-colors">Email Address*</label>
                   <input 
                     required 
                     type="email" 
-                    placeholder="ex. jane.smith@example.com" 
-                    className="w-full h-16 bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 font-bold text-primary focus:border-secondary focus:ring-0 transition-all outline-none"
+                    placeholder="ENTER EMAIL ADDRESS*" 
+                    className="w-full h-16 bg-white border-2 border-gray-100 rounded-[1.5rem] px-8 font-black text-primary focus:border-secondary shadow-sm hover:shadow-md transition-all outline-none placeholder:text-gray-400 placeholder:text-[10px] placeholder:tracking-widest"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-black text-primary uppercase tracking-widest">Phone Number*</label>
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 ml-4 group-hover:text-primary transition-colors">Phone Number*</label>
                   <input 
                     required 
                     type="tel" 
-                    placeholder="(555) 555-5555" 
-                    className="w-full h-16 bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 font-bold text-primary focus:border-secondary focus:ring-0 transition-all outline-none"
+                    placeholder="ENTER PHONE NUMBER*" 
+                    className="w-full h-16 bg-white border-2 border-gray-100 rounded-[1.5rem] px-8 font-black text-primary focus:border-secondary shadow-sm hover:shadow-md transition-all outline-none placeholder:text-gray-400 placeholder:text-[10px] placeholder:tracking-widest"
                   />
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-[2rem] border-2 border-gray-100">
-                <input type="checkbox" className="mt-1 w-6 h-6 rounded-md border-2 border-primary text-primary focus:ring-0" id="sms" />
+              <div className="flex items-start gap-4 p-8 bg-gray-50/50 rounded-[2.5rem] border-2 border-gray-100 shadow-inner">
+                <input type="checkbox" className="mt-1 w-6 h-6 rounded-md border-2 border-primary text-secondary focus:ring-0 cursor-pointer" id="sms" />
                 <label htmlFor="sms" className="text-sm text-gray-500 font-bold leading-relaxed cursor-pointer select-none">
-                  <span className="text-primary">Yes! You can text me service reminders and other messages.</span><br />
-                  By checking this box, I agree to opt in to receive automated SMS and/or MMS messages from Mr. Drainer. Message frequency varies. View Terms and Privacy Policy. Reply STOP to opt out.
+                  <span className="text-primary italic uppercase tracking-tight">Yes! You can text me service reminders and other messages.</span><br />
+                  <span className="text-[10px] opacity-70">By checking this box, I agree to opt in to receive automated SMS and/or MMS messages from Mr. Drainer. Message frequency varies. View Terms and Privacy Policy. Reply STOP to opt out.</span>
                 </label>
               </div>
 
@@ -143,13 +145,13 @@ export default function SchedulePage() {
                 <button 
                   disabled={loading}
                   type="submit" 
-                  className="w-full sm:w-auto bg-primary hover:bg-blue-800 text-white font-black py-6 px-12 rounded-2xl shadow-xl transition-all active:scale-95 uppercase italic tracking-widest duration-300 flex items-center justify-center gap-3 disabled:opacity-50"
+                  className="w-full sm:w-auto bg-secondary hover:bg-red-700 text-white font-black py-6 px-16 rounded-[1.5rem] shadow-[0_15px_40px_rgba(227,27,35,0.3)] transition-all active:scale-95 uppercase italic tracking-widest duration-300 flex items-center justify-center gap-3 disabled:opacity-50 cursor-pointer"
                 >
                   {loading ? <Loader2 className="animate-spin" /> : "Submit & Continue"}
-                  {!loading && <ChevronRight size={24} />}
+                  {!loading && <ChevronRight size={24} strokeWidth={3} />}
                 </button>
-                <Link href="/" className="text-primary font-black uppercase tracking-widest hover:text-secondary transition-colors">
-                  Cancel
+                <Link href="/" className="w-full sm:w-auto text-primary font-black uppercase tracking-[0.2em] text-sm hover:text-secondary transition-colors underline decoration-2 underline-offset-8 text-center sm:text-left">
+                  Cancel Appointment
                 </Link>
               </div>
             </form>

@@ -17,7 +17,7 @@ export default function ResidentialHero() {
             <div className="space-y-6">
               <p className="text-lg md:text-xl text-gray-600 font-bold leading-relaxed italic uppercase tracking-tight">
                 Are you looking for experts in residential plumbing services you can trust? 
-                Look no further than <span className="text-primary font-black underline decoration-4 underline-offset-8">Mr. Rooter Plumbing®</span>. 
+                Look no further than <span className="text-primary font-black underline decoration-4 underline-offset-8">Mr. Drainer Plumbing</span>. 
               </p>
               <p className="text-base md:text-lg text-gray-500 font-medium leading-[1.8]">
                 We are a locally owned and operated company with licensed and insured service professionals ready to handle your plumbing needs 24/7.
@@ -35,7 +35,7 @@ export default function ResidentialHero() {
           <div className="lg:w-1/2 relative animate-in fade-in slide-in-from-right duration-1000">
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border-8 border-white group">
               <Image 
-                src="/hero.png" 
+                src="/residential-hero.png" 
                 alt="Residential Plumbing Technician" 
                 width={800} 
                 height={500} 

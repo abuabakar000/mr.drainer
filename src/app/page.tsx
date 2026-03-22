@@ -92,7 +92,7 @@ export default function Home() {
               <p className="text-gray-500 font-medium mb-6 leading-relaxed">
                 Persistent clogs? Our advanced equipment clears any blockage quickly and efficiently.
               </p>
-              <button className="flex items-center gap-2 text-primary font-black uppercase text-sm group-hover:gap-4 transition-all italic">
+              <button className="flex items-center gap-2 text-primary font-black uppercase text-sm group-hover:gap-4 transition-all italic cursor-pointer">
                 Learn More <ArrowRight size={16} />
               </button>
             </div>
@@ -105,7 +105,7 @@ export default function Home() {
               <p className="text-gray-500 font-medium mb-6 leading-relaxed">
                 From leaky faucets to burst pipes, our experts fix it all with upfront, honest pricing.
               </p>
-              <button className="flex items-center gap-2 text-primary font-black uppercase text-sm group-hover:gap-4 transition-all italic">
+              <button className="flex items-center gap-2 text-primary font-black uppercase text-sm group-hover:gap-4 transition-all italic cursor-pointer">
                 Learn More <ArrowRight size={16} />
               </button>
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
               Let us know how we can help you today.
             </p>
           </div>
-          <Link href="/schedule" className="bg-secondary p-1 px-2 rounded-lg hover:bg-red-700 transition-all shadow-2xl active:scale-95 group">
+          <Link href="/schedule" className="bg-secondary p-1 px-2 rounded-lg hover:bg-red-700 transition-all shadow-2xl active:scale-95 group cursor-pointer">
             <div className="bg-secondary border-2 border-white/20 px-8 py-5 rounded-md flex items-center gap-3">
               <Clock size={24} className="group-hover:rotate-12 transition-transform" />
               <span className="font-black italic uppercase tracking-widest text-lg text-white">Schedule Service</span>
@@ -179,7 +179,7 @@ export default function Home() {
                 ))}
               </ul>
 
-              <button className="inline-flex bg-primary text-white font-black py-5 px-10 rounded-xl shadow-xl hover:bg-blue-800 transition-all active:scale-95 uppercase italic tracking-widest items-center gap-3 w-fit">
+              <button className="inline-flex bg-primary text-white font-black py-5 px-10 rounded-xl shadow-xl hover:bg-blue-800 transition-all active:scale-95 uppercase italic tracking-widest items-center gap-3 w-fit cursor-pointer">
                 Other Services <ArrowRight size={20} />
               </button>
             </div>

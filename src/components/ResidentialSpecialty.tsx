@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function ResidentialSpecialty() {
@@ -35,14 +36,14 @@ export default function ResidentialSpecialty() {
             <p className="text-gray-600 font-medium leading-relaxed">
               We offer many <span className="text-primary font-bold underline cursor-pointer">home plumbing services</span> throughout the nation, including:
             </p>
-            <button className="bg-primary hover:bg-blue-800 text-white font-black py-5 px-8 rounded-xl transition-all shadow-xl active:scale-95 uppercase italic tracking-widest flex items-center justify-center gap-3 w-fit">
-              Go to Residential Plumbing Services <ArrowRight size={20} strokeWidth={3} />
-            </button>
+            <Link href="/schedule" className="bg-primary hover:bg-blue-800 text-white font-black py-5 px-8 rounded-xl transition-all shadow-xl active:scale-95 uppercase italic tracking-widest flex items-center justify-center gap-3 w-fit cursor-pointer">
+              Book for residential services <ArrowRight size={20} strokeWidth={3} />
+            </Link>
           </div>
 
           {/* Right: Popular Services Card */}
-          <div className="lg:w-1/3 flex items-center">
-            <div className="bg-white rounded-[2rem] shadow-xl p-10 border border-gray-100 relative w-full h-fit group hover:border-primary transition-colors">
+          <div className="lg:w-1/3 flex items-center mt-12 lg:mt-0">
+            <div className="bg-white rounded-[2rem] shadow-xl p-6 md:p-10 border border-gray-100 relative w-full h-fit group hover:border-primary transition-colors">
               <div className="absolute -top-10 right-10 bg-secondary p-5 rounded-full shadow-2xl border-4 border-white text-white group-hover:bg-primary transition-colors">
                  <svg viewBox="0 0 24 24" className="w-10 h-10 fill-current">
                     <path d="M12,18.5L2,8.5L3.41,7.09L12,15.67L20.59,7.09L22,8.5L12,18.5Z" />

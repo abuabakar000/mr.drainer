@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo and About */}
         <div>
-          <Link href="/" className="inline-flex items-center gap-2 mb-4">
+          <Link href="/" className="inline-flex items-center gap-2 mb-4 cursor-pointer">
             <Image 
               src="/logo.png" 
               alt="Mr. Drainer Logo" 
               width={180} 
               height={60} 
-              className="h-10 w-auto object-contain"
+              className="h-10 w-auto object-contain cursor-pointer"
             />
           </Link>
           <p className="text-sm text-gray-400 leading-relaxed font-medium">
@@ -24,22 +24,30 @@ export default function Footer() {
         {/* Links Column 1 */}
         <div>
           <h3 className="text-lg font-bold mb-4 border-b border-primary pb-2 text-primary uppercase tracking-wider">Services</h3>
-          <ul className="space-y-2 text-sm text-gray-400 font-bold uppercase transition-all tracking-wide">
-            <li><Link href="#" className="hover:text-primary">Drain Cleaning</Link></li>
-            <li><Link href="#" className="hover:text-primary">Sewer Line Repair</Link></li>
-            <li><Link href="#" className="hover:text-primary">Water Heaters</Link></li>
-            <li><Link href="#" className="hover:text-primary">Emergency Service</Link></li>
+          <ul className="space-y-1 text-xs text-gray-400 font-bold uppercase transition-all tracking-wide">
+            <li className="italic">Drain Cleaning</li>
+            <li className="italic">Sewer Line Repair</li>
+            <li className="italic">Water Heaters</li>
+            <li className="italic">Emergency Service</li>
+            <li className="italic">Sumppump Services</li>
+            <li className="italic">Leaky Pipe Repair</li>
+            <li className="italic">Hydro Jetting</li>
+            <li className="italic">Pipe Shield®</li>
+            <li className="italic">Septic Tank Service</li>
+            <li className="italic">Gas Line Services</li>
           </ul>
         </div>
 
         {/* Links Column 2 */}
         <div>
           <h3 className="text-lg font-bold mb-4 border-b border-primary pb-2 text-primary uppercase tracking-wider">Resources</h3>
-          <ul className="space-y-2 text-sm text-gray-400 font-bold uppercase transition-all tracking-wide">
-            <li><Link href="#" className="hover:text-primary">About Us</Link></li>
-            <li><Link href="#" className="hover:text-primary">Why Choose Us</Link></li>
-            <li><Link href="#" className="hover:text-primary">FAQ</Link></li>
-            <li><Link href="#" className="hover:text-primary">Blog</Link></li>
+          <ul className="space-y-1 text-xs text-gray-400 font-bold uppercase transition-all tracking-wide">
+            <li><Link href="/" className="hover:text-primary transition-colors italic cursor-pointer">Home</Link></li>
+            <li><Link href="/residential" className="hover:text-primary transition-colors italic cursor-pointer">Residential</Link></li>
+            <li><Link href="/commercial" className="hover:text-primary transition-colors italic cursor-pointer">Commercial</Link></li>
+            <li><Link href="/emergency" className="hover:text-primary transition-colors italic cursor-pointer">Emergency</Link></li>
+            <li><Link href="/about" className="hover:text-primary transition-colors italic cursor-pointer">About Us</Link></li>
+            <li><Link href="/schedule" className="hover:text-primary transition-colors italic cursor-pointer">Book Online</Link></li>
           </ul>
         </div>
 
@@ -51,7 +59,7 @@ export default function Footer() {
             <a href="tel:8447408904" className="text-2xl font-black text-secondary hover:underline transition-all">
               (844) 740-8904
             </a>
-            <Link href="/schedule" className="mt-4 bg-primary text-white px-6 py-3 rounded-md font-bold text-sm hover:bg-blue-800 transition-all shadow-md active:scale-95 uppercase tracking-wider text-center">
+            <Link href="/schedule" className="mt-4 bg-primary text-white px-6 py-3 rounded-md font-bold text-sm hover:bg-blue-800 transition-all shadow-md active:scale-95 uppercase tracking-wider text-center cursor-pointer">
               Schedule Service
             </Link>
           </div>

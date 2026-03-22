@@ -77,8 +77,8 @@ export default function AboutValues() {
                 </div>
                 
                 {/* Large Letter Block */}
-                <div className={`absolute top-1/2 ${idx % 2 === 1 ? '-left-12' : '-right-12'} -translate-y-1/2 bg-white p-2 rounded-[2rem] shadow-2xl border-4 border-blue-100 hidden md:block`}>
-                  <div className="bg-primary w-24 h-24 rounded-[1.5rem] flex items-center justify-center text-white text-6xl font-black italic tracking-tighter">
+                <div className={`absolute top-4 ${idx % 2 === 1 ? 'left-4' : 'right-4'} md:top-1/2 md:${idx % 2 === 1 ? '-left-12' : '-right-12'} md:-translate-y-1/2 bg-white p-2 rounded-2xl md:rounded-[2rem] shadow-2xl border-4 border-blue-100 z-10`}>
+                  <div className="bg-primary w-16 h-16 md:w-24 md:h-24 rounded-xl md:rounded-[1.5rem] flex items-center justify-center text-white text-3xl md:text-6xl font-black italic tracking-tighter">
                     {value.letter}
                   </div>
                 </div>

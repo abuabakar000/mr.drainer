@@ -16,8 +16,8 @@ export default function CommercialHero() {
             </h1>
             
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
-            <Link href="/schedule" className="bg-secondary hover:bg-red-700 text-white font-black py-6 px-10 rounded-2xl transition-all shadow-2xl active:scale-95 uppercase italic tracking-widest flex items-center justify-center gap-3 text-xl group">
-              Book Online <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform" />
+            <Link href="/schedule" className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-all shadow-xl active:scale-95 uppercase tracking-wider cursor-pointer">
+              Book Online <ArrowRight size={20} />
             </Link>
             </div>
 

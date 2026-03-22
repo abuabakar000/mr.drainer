@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function AdvantagePlanSection() {
@@ -48,7 +49,7 @@ export default function AdvantagePlanSection() {
           </div>
 
           {/* Center: Image */}
-          <div className="lg:w-1/3 w-full relative h-[500px] rounded-3xl overflow-hidden shadow-2xl group border-8 border-white">
+          <div className="lg:w-1/3 w-full relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl group border-8 border-white">
              <Image 
                 src="/advantage-truck.png" 
                 alt="Advantage Plan Truck" 
@@ -68,9 +69,9 @@ export default function AdvantagePlanSection() {
             <p className="text-lg text-gray-600 font-medium leading-relaxed">
               Our plumbing maintenance services prevent emergency plumbing issues from cropping up. But we know you can&apos;t plan ahead for everything, which is why we created our Advantage Plan, designed for customers who stay on top of their home plumbing.
             </p>
-            <button className="bg-primary hover:bg-blue-800 text-white font-black py-5 px-10 rounded-xl shadow-xl transition-all active:scale-95 uppercase italic tracking-widest flex items-center gap-3">
-              Go to Our Advantage Plan <ArrowRight size={20} strokeWidth={3} />
-            </button>
+            <Link href="/schedule" className="bg-primary hover:bg-blue-800 text-white font-black py-5 px-10 rounded-xl shadow-xl transition-all active:scale-95 uppercase italic tracking-widest flex items-center gap-3 cursor-pointer">
+              Booking <ArrowRight size={20} strokeWidth={3} />
+            </Link>
           </div>
         </div>
       </div>
