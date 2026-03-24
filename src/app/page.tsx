@@ -16,13 +16,13 @@ export default function Home() {
           {/* Main Content Row: Heading, Paragraph and Image */}
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-16">
             <div className="lg:w-1/2 space-y-8 animate-in fade-in slide-in-from-left duration-1000">
-              <h1 className="text-4xl md:text-5xl font-black text-primary leading-[1.1] tracking-tight uppercase italic">
+              <h1 className="text-3xl md:text-5xl font-black text-primary leading-[1.1] tracking-tight uppercase italic">
                 Quality Work by<br />
                 <span className="text-secondary tracking-tighter">Local</span> Plumbing Professionals
               </h1>
 
               <div className="space-y-6">
-                <p className="text-lg md:text-xl text-gray-600 font-bold leading-relaxed italic uppercase tracking-tight">
+                <p className="text-base md:text-xl text-gray-600 font-bold leading-relaxed italic uppercase tracking-tight">
                   Are you looking for experts in residential plumbing services you can trust?
                   Look no further than <span className="text-primary font-black underline decoration-4 underline-offset-8">Mr. Drainer Plumbing</span>.
                 </p>
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
 
             <div className="lg:w-1/2 relative animate-in fade-in slide-in-from-right duration-1000">
-              <div className="relative rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border-8 border-white group">
+              <div className="relative rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border-4 md:border-8 border-white group">
                 <Image
                   src="/hero.png"
                   alt="Plumbing Technician"
@@ -63,16 +63,15 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Bottom Card: Booking/Form (Premium Card Style) */}
-          <BookingForm defaultTab="Residential" />
         </div>
+        <BookingForm defaultTab="Residential" />
       </section>
 
       {/* Services Section */}
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mb-16">
-            <h2 className="text-3xl md:text-5xl font-black text-primary mb-6 leading-tight italic uppercase tracking-tighter">
+            <h2 className="text-2xl md:text-5xl font-black text-primary mb-6 leading-tight italic uppercase tracking-tighter">
               Professional House <br />
               <span className="text-secondary">Plumbing Services</span>
             </h2>
@@ -84,7 +83,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+            <div className="group bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
               <div className="bg-secondary/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-300">
                 <Droplets size={48} strokeWidth={1.5} />
               </div>
@@ -156,11 +155,11 @@ export default function Home() {
       </section>
 
       {/* Additional Services Section */}
-      <section className="py-24 bg-pattern">
+      <section className="py-16 md:py-24 bg-pattern">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row items-stretch border border-gray-100">
-            <div className="lg:w-1/2 p-12 md:p-20 order-2 lg:order-1 flex flex-col justify-center">
-              <h2 className="text-3xl md:text-5xl font-black text-primary mb-8 italic uppercase leading-tight tracking-tighter">
+          <div className="bg-white rounded-3xl md:rounded-[2rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row items-stretch border border-gray-100">
+            <div className="lg:w-1/2 p-8 md:p-20 order-2 lg:order-1 flex flex-col justify-center">
+              <h2 className="text-2xl md:text-5xl font-black text-primary mb-8 italic uppercase leading-tight tracking-tighter">
                 Additional <br />
                 <span className="text-secondary">Plumbing Services</span>
               </h2>

@@ -24,13 +24,13 @@ export default function EmergencyHero() {
             <ShieldAlert size={20} /> 24/7 Emergency Response
           </div>
           
-          <h1 className="text-4xl md:text-7xl font-black text-white leading-[1.1] tracking-tighter uppercase italic">
+          <h1 className="text-4xl md:text-7xl font-black text-white leading-none tracking-tighter uppercase italic">
             Urgent Plumbing <br />
             <span className="text-secondary">Emergency?</span> <br />
             We&apos;re On Our Way.
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 font-bold leading-relaxed italic max-w-2xl">
+          <p className="text-lg md:text-2xl text-white/90 font-bold leading-relaxed italic uppercase tracking-tight">
             When disaster strikes, you don&apos;t have time to wait. Our elite team is standing by 24/7 to save your home from water damage.
           </p>
 
@@ -41,8 +41,8 @@ export default function EmergencyHero() {
             
             <Link href="/schedule" className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all group flex-1 flex items-center justify-center cursor-pointer">
               <div className="flex items-center gap-4">
-                <div className="bg-white/20 p-3 rounded-xl text-white group-hover:scale-110 transition-transform">
-                  <Calendar size={32} />
+                <div className="bg-white/20 p-2 md:p-3 rounded-xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-black/10">
+                  <Calendar size={24} className="md:w-8 md:h-8" />
                 </div>
                 <div className="text-white">
                   <p className="text-[10px] uppercase font-black tracking-widest opacity-60 leading-none mb-1">Non-Emergency</p>

@@ -15,9 +15,7 @@ export default function ResidentialPage() {
       <ResidentialHero />
 
       {/* Booking Form Card */}
-      <div className="container mx-auto px-4 max-w-7xl -mt-20 relative z-20">
-        <BookingForm defaultTab="Residential" />
-      </div>
+      <BookingForm defaultTab="Residential" />
 
       {/* Popular Services Section (Pic 2 Style) */}
       <ResidentialServices />

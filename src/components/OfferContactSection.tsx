@@ -38,7 +38,7 @@ export default function OfferContactSection() {
                   <div className="bg-secondary p-1 rounded-full text-white">
                      <CheckCircle2 size={24} strokeWidth={3} />
                   </div>
-                  <h3 className="text-3xl font-black text-primary uppercase italic tracking-tighter">What We Offer</h3>
+                  <h3 className="text-2xl md:text-3xl font-black text-primary uppercase italic tracking-tighter">What We Offer</h3>
                </div>
                
                <p className="text-gray-600 font-bold mb-8 uppercase tracking-wide italic">When you choose Mr. Rooter Plumbing, you can enjoy:</p>
@@ -60,10 +60,10 @@ export default function OfferContactSection() {
             {/* Bottom Card: Contact */}
             <div className="bg-white rounded-3xl shadow-xl p-6 md:p-10 border-l-[12px] border-secondary flex flex-col justify-center relative group hover:border-primary transition-colors">
                <div className="flex flex-col sm:flex-row gap-6 mb-6 items-center">
-                  <Link href="/schedule" className="bg-primary hover:bg-blue-800 text-white font-black py-6 px-12 rounded-2xl shadow-2xl transition-all active:scale-95 uppercase italic tracking-widest flex items-center justify-center gap-3 text-xl cursor-pointer">
+                  <Link href="/schedule" className="bg-primary hover:bg-blue-800 text-white font-black py-4 md:py-6 px-8 md:px-12 rounded-2xl shadow-2xl transition-all active:scale-95 uppercase italic tracking-widest flex items-center justify-center gap-3 text-lg md:text-xl cursor-pointer">
                     Schedule Service <ArrowRight size={24} />
                   </Link>
-                  <h3 className="text-2xl md:text-3xl font-black text-primary uppercase italic tracking-tighter leading-tight text-center sm:text-left">
+                  <h3 className="text-xl md:text-3xl font-black text-primary uppercase italic tracking-tighter leading-tight text-center sm:text-left">
                     Contact Mr. Drainer Plumbing for <br />
                     Residential Plumbing Services Today
                   </h3>

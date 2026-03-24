@@ -34,7 +34,7 @@ export default function Navbar() {
         Emergency Plumbing? Call Mr. Drainer Now! <span className="hover:underline cursor-pointer italic">(844) 740-8904</span>
       </div>
 
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image 
@@ -63,7 +63,7 @@ export default function Navbar() {
           
           <div className="flex flex-col items-end">
             <span className="text-xs font-bold text-gray-500 uppercase">Call Today</span>
-            <a href="tel:8447408904" className="text-lg md:text-2xl font-black text-primary hover:text-secondary transition-colors leading-none cursor-pointer">
+            <a href="tel:8447408904" className="text-base md:text-2xl font-black text-primary hover:text-secondary transition-colors leading-none cursor-pointer">
               (844) 740-8904
             </a>
           </div>

@@ -18,9 +18,7 @@ export default function AboutPage() {
       <AboutFAQ />
 
       {/* Booking Form Card */}
-      <div className="container mx-auto px-4 max-w-7xl relative z-20 pb-24">
-        <BookingForm defaultTab="Residential" />
-      </div>
+      <BookingForm defaultTab="Residential" />
     </div>
   );
 }
